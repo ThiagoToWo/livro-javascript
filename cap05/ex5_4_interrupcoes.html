@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<script>
+    alert("Digite 0 para sair")
+    
+    do {
+        const num = Number(prompt("Número: "));
+        
+        if (num == 0 || isNaN(num)) {
+            const sair = confirm("confirma saída?");
+
+            if (sair) {
+                break;
+            } else {
+                continue;
+            }
+        }
+
+        if (num % 2 == 0) {
+            alert(`O dobro de ${num} é ${2 * num}`);
+        } else {
+            alert(`O triplo de ${num} é ${3 * num}`);
+        }
+    } while (true);
+
+    alert("Tchau, Tchau...");
+</script>

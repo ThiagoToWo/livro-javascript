@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokens</title>
+    <script>
+        function dividir(texto, separadores) {
+            const tokens = [];
+            let palavra = "";
+            let achou = false;
+        
+            for (let i = 0; i < texto.length; i++) {
+                for (let j = 0; j < separadores.length; j++) {
+                    if (texto[i] == separadores[j]) {
+                        achou = true;
+                        break;
+                    }
+                }
+        
+                if (!achou) {
+                    palavra += texto[i];
+                } else if(achou) {
+                    tokens.push(palavra);
+                    palavra = "";
+                    achou = false;
+                }
+            }
+
+            tokens.push(palavra);
+        
+            return tokens;
+        }
+        </script>
+</head>
+<body>
+    <h1>String Tokenizer</h1>
+    <form>
+        <p>Texto:
+            <input type="text" id="inTexto" required autofocus>
+        </p>
+        <p>Separadores:
+            <input type="text" id="inSepara" value=" ">
+        </p>
+        <input type="submit" value="Separar">
+    </form>
+    <pre></pre>
+    <script>
+        const form = document.querySelector("form");
+        const pre = document.querySelector("pre");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const texto = form.inTexto.value;
+            const separ = form.inSepara.value;
+
+            const tokens = strtok(texto, separ);
+
+            let palavras = "";
+
+            tokens.forEach((token, i) => {
+                palavras = `${palavras}${i}. ${token}\n`;
+            });
+
+            pre.innerText = palavras;
+        });
+    </script>
+</body>
+</html>

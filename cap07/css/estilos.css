@@ -1,0 +1,43 @@
+img.normal {
+    float: left;
+    width: 300px;
+    height: 300px;
+}
+
+img.alta {
+    float: left;
+    width: 300px;
+    height: 420px;
+}
+
+h1 {
+    border-bottom-style: inset;
+}
+
+pre {
+    font-size: 1.2em;
+}
+
+.fonte-azul {
+    color: blue;
+}
+
+.oculta {
+    display: none;
+}
+
+.exibe {
+    display: inline;
+}
+
+.italico {
+    font-style: italic;
+}
+
+.entre-letras {
+    letter-spacing: 0.5em;
+}
+
+.alinha-direita {
+    text-align: right;
+}

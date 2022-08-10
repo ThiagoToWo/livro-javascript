@@ -1,0 +1,11 @@
+<script>
+    const anuncio = prompt("Anúncio: ");
+    let contador = 0;
+    const tam = anuncio.length;
+    for (const letra of anuncio) {
+        if (letra == " ") {
+            contador++;
+        }
+    }
+    alert(`Anúncio: ${anuncio}\nNº Palavras: ${contador + 1}`);
+</script>

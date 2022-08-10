@@ -1,0 +1,21 @@
+<script>
+    const bairro = prompt("Bairro de Entrega: ");
+    let taxa;
+
+    switch (bairro) {
+        case "Centro":
+            taxa = 5;
+            break;
+        case "Formigueiro":
+        case "Ingleses":
+            taxa = 7;
+            break;
+        case "Pombal":
+            taxa = 10;
+            break;
+        default:
+            taxa = 8;
+    }
+
+    alert(`Taxa R$ ${taxa.toFixed(2)}`);
+</script>
