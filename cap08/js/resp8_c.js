@@ -21,18 +21,23 @@ form. addEventListener("submit", (e) => {
         convenio = form.selConvenio.options[i].value;
 
         if (convenio == "amigo") {
-            resp1.innerText = `Desconto: R$ ${(0.2 * preco).toFixed(2)}`;
-            resp2.innerText = `À pagar: R$ ${(0.8 * preco).toFixed(2)}`;
+            exibirResultados(preco, 20);
         } else {
-            resp1.innerText = `Desconto: R$ ${(0.5 * preco).toFixed(2)}`;
-            resp2.innerText = `À pagar: R$ ${(0.5 * preco).toFixed(2)}`;
+            exibirResultados(preco, 50);
         }
     } else {
-        resp1.innerText = `Desconto: R$ ${(0.1 * preco).toFixed(2)}`;
-        resp2.innerText = `À pagar: R$ ${(0.9 * preco).toFixed(2)}`;
+        exibirResultados(preco, 10);
     }
 
     form.reset();
     form.inPreco.focus();
     form.rbNao.dispatchEvent(new Event("click"));
 });
+
+const calcularDesconto = (valor, taxaPorcentagem) => valor * taxaPorcentagem / 100;
+
+const exibirResultados = (valor, taxaPorcentagem) => {
+    const desconto = calcularDesconto(valor, taxaPorcentagem);
+    resp1.innerText = `Desconto: R$ ${desconto.toFixed(2)}`;
+    resp2.innerText = `À pagar: R$ ${(valor - desconto).toFixed(2)}`;
+}
