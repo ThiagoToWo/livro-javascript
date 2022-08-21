@@ -1,0 +1,24 @@
+<script>
+    const calcularMedia = (...notas) => {
+        const n = notas.length;
+        
+        if (n == 0) {
+            console.log("Insira no mínimo uma nota");
+            return;
+        }
+
+        let soma = 0;
+
+        for (const nota of notas) {
+            soma += nota;
+        }
+
+        const media = soma / n;
+
+        console.log(`Média: ${media.toFixed(1)}`);
+    }
+
+    calcularMedia(6, 7, 8);
+    calcularMedia(2, 10);
+    calcularMedia(7.5, 10, 8, 9.5);
+</script>
