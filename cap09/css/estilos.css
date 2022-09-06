@@ -1,0 +1,84 @@
+img.normal {
+    float: left;
+    width: 300px;
+    height: 300px;
+}
+
+img.alta {
+    float: left;
+    width: 300px;
+    height: 420px;
+}
+
+h1 {
+    border-bottom-style: inset;
+}
+
+pre {
+    font-size: 1.2em;
+}
+
+.fonte-azul {
+    color: blue;
+}
+
+.oculta {
+    display: none;
+}
+
+.exibe {
+    display: inline;
+}
+
+.italico {
+    font-style: italic;
+}
+
+.entre-letras {
+    letter-spacing: 0.5em;
+}
+
+.alinha-direita {
+    text-align: right;
+}
+
+span {
+    margin-left: 70px;
+}
+
+select {
+    width: 150px;
+}
+
+.detalhes {
+    width: 380px;
+}
+
+.cores-Flamengo {
+    color: black;
+    background-color: red;
+}
+
+.cores-Fluminense {
+    color: #831D1C;
+    background-color: green;
+}
+
+.cores-Cruzeiro,
+.fundo-azul {
+    color: white;
+    background-color: blue;
+}
+
+.esticado {
+    position: relative;
+    margin-left: 0px;
+    padding-left: 1%;
+    width:100%;
+}
+
+.elemento-direita {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-end;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="icon" href="img/icon.png">
+    <title>Lista de Compras</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="img/resp9_b.png" class="img-fluid" alt="carrinho de compras">
+            </div>
+            <div class="col-sm-8">
+                <h1>Compras da Semana</h1>
+                <form>
+                    <p>
+                        <label for="inProduto">Produto</label>
+                        <input type="text" id="inProduto" class="form-control" autofocus required>
+                    </p>
+                    <p>
+                        <input type="submit" value="Adicionar" class="btn btn-primary">
+                        <input type="button" id="btLimpar" value="Limpar Lista" class="btn btn-danger">
+                    </p>
+                </form>
+                <pre></pre>                
+            </div>
+        </div>
+    </div>
+    <script src="js/resp9_b.js"></script>
+</body>
+</html>
