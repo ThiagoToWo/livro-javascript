@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/icon.png">
+    <title>Tabela de Jogos</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="img/resp10_c.jpg" alt="jogador de futebol" class="img-fluid">
+            </div>
+            <div class="col-sm-8" id="divTabela">
+                <h1>Copa do Brasil - Classificados</h1>
+                <form>
+                    <p>
+                        <label for="inclube">Clube:</label>
+                        <input type="text" id="inClube" class="form-control" autufocus required>
+                    </p>
+                    <p>
+                        <input type="submit" id="btAdicionar" value="Adicionar" class="btn btn-primary">
+                        <input type="button" id="btTabela" value="Montar Tabela de Jogos" class="btn btn-warning">
+                        <input type="reset" value="Novos Times" class="btn btn-danger">
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/resp10_c.js"></script>
+</body>
+</html>

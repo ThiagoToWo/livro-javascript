@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/icon.png">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="img/ex10_1.jfif" alt="bloco de notas" class="img-fluid">
+            </div>
+            <div class="col-sm-8" id="divQuadro">
+                <h1>Lista de Tarefas</h1>
+                <form>
+                    <p>
+                        <label for="inTarefa">Tarefa</label>
+                        <input type="text" id="inTarefa" class="form-control" autofocus required>
+                    </p>
+                    <p>
+                        <input type="submit" value="Adicionar &#10003" class="btn btn-primary">
+                        <input type="button" value="Selecionar &#8645" id="btSelecionar" class="btn btn-info">
+                        <input type="button" value="Retirar &#10007" id="btRetirar" class="btn btn-danger">
+                        <input type="button" value="Gravar &#9673" id="btGravar" class="btn btn-success">
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/ex10_1.js"></script>
+</body>
+</html>
