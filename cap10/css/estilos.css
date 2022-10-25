@@ -101,3 +101,8 @@ img.moeda-010 {
     width: 60px;
     margin-bottom: 5px;
 }
+
+.exclui {
+    color: red;
+    cursor: pointer;
+}
