@@ -1,0 +1,88 @@
+capítulo, página: descrição.
+
+cap. 2, pág. 53: 
+	No item 3 está escrito: "Os operadores de multiplicação, SUBTRAÇÃO e módulo (...)". Troca-se "subtração" por "divisão" e o correto seria: "Os operadores de multiplicação, DIVISÃO e módulo (...)".
+
+cap. 2, pág. 58; cap. 3, pág. 69 e 70;  cap. 9, pág. 230, 231 e 232:
+	O símbolo correto para a unidade gramas é "g" e não "gr". 
+
+cap. 2, pág. 61:
+	Na seção 2.11 está escrito: "(...) pois o próprio navegador possui um INTERPRETAR para os códigos (...)". Troca-se "interpretar" por "interpretador" e o correto seria: "(...) pois o próprio navegador possui um INTERPRETADOR para os códigos (...)".
+
+cap.5, pág. 111:
+	No segundo parágrafo está escrito: "(...) um número primo é aquele que possui apenas 2 divisores: 1 E ELE MESMO". O problema, está em "1 e ele mesmo", pois o número 1 não é primo e possui como divisores 1 e ele mesmo.
+
+	O mais exato seria: "(...) um número primo é aquele que possui apenas 2 divisores DISTINTOS: 1 e ele mesmo". Já que o 1 não possui apenas dois divisores distintos, ele não é primo.
+	Outra forma: "(...) um número primo é aquele MAIOR QUE 1 que possui apenas 2 divisores: 1 e ele mesmo".
+
+cap.5, pág. 112:
+	Na observação no começo da página se diz: "Segundos novos conceitos matemáticos, o número 1 não deve ser mais considerado número primo." Por definição, desde a era de Euclides, o 1 não é primo. Não foi eliminado dos primos recentemente.
+
+cap. 5, pág. 112:
+	No terceiro parágrafo se diz: "(...) como o maior divisor inteiro possível de um número é SUA METADE, (...)". Essa informação está incorreta. O maior divisor possível de um número é ele mesmo! Porém, para se encontrar todos os divisores, basta testar divisões sucessivas do 2 (já que o 1 é sempre divisor) até um número menor ou igual à RAIZ QUADRADA desse número. 
+
+Por exemplo, o número o número 12: tem como divisores (1, 12), (2, 6), (3, 4). Observe o teste feito até 3 (raiz de 12 = 3,46...).
+O número 72, tem como divisores (1, 72), (2, 36), (3, 24), (4, 18), (6, 12), (8, 9). Observe o teste sendo feito até 8 (raiz de 72 = 8,48...).
+
+for (let i = 2; i * i <= num; i++) {...}
+
+cap. 5, pág. 122:
+	No exercício (c), já que o próprio número não é incluído como divisor na exibição dos divisores, é importante colocar a descrição como "Divisores PRÓPRIOS do ...".
+
+cap. 6, pág. 126:
+	Na tabela, na linha de "unshift()", deve-se escrever que se desloca os elementos existentes uma posição (no sentido de índice) acima e não abaixo.
+	Na linha de "shift()", deve-se escrever que se desloca os elementos existentes uma posição (no sentido de índice) abaixo e não acima.
+
+cap. 7, pág. 171:
+	O HTML do programa Nome no Crachá (ex7_4.html) tem como código o HTML do programa E-mail Institucional (ex7_5.html).
+
+cap. 7, pág. 181 e 182:
+	O ex7_8.html não possui h3 como capturado na variável resp (pág. 181) e descrito no primeiro parágrafo da pág. 182.
+
+cap. 7, pág. 187:
+	No código do exercício (a) disponível nos exemplos, na hora de descriptografar acusa "i is not defined" na linha 47 de resp7_a.js.
+
+cap. 8, pág. 192:
+	No último parágrafo antes da seção 8.2 está escrito: "(...) para chamar (executar) uma função, apenas escreva o nome da function no programa". Faltou acrescentar que se deve, além do nome da função, escrever os parênteses.
+
+cap. 8, pág. 208:
+	Trocar "${tipo}" por "${pesq}" na linha onde se imprime o aviso de vinho não encontrado.
+
+cap. 9, pág. 222:
+	No segundo parágrafo da seção 9.3 pede-se para retornar ao site w3schools.com para modificar o que foi feito no início do capítulo, mas no início do capítulo (pág. 215, sec. 9.1) o site sugerido é o js.do.
+
+cap. 10, pág. 239:
+	Faltou definir a classe ".exclui".
+
+cap. 10, pág. 247:
+	Math.random() geram números x, tal que 0 <= x < 1. Usar Math.ceil(Math.random() * 5) ainda teria a possibilidade de surgir o número 0, pois caso Math.random() = 0, então Math.ceil(0) = 0. Para excluir essa chance teórica de 10^(-16), deve-se usar 1 + Math.floor(Math.random() * 5). Dessa forma, é certo que apenas números de 1 a 5 serão gerados. 
+
+cap. 10, pág. 249:
+	O comando "frm.submit.disable = true" não desabilita o botão de submit do programa. É preciso colocar um id no botão de submit e chamá-lo.
+
+cap. 11, pág. 262:
+	Faltou definir a classe ".exclui" e a classe ".corFundo".
+
+cap. 11, pág. 263:
+	A label está definida para "inAposta", mas o id do input é "inValor".
+
+cap. 11, pág. 266:
+	A função obterCavalo já foi pedida para ser adicionada na página 265. 
+
+cap. 11, pág. 276:
+	No início do segundo parágrafo diz que a figura 11.6 é que exibe a página que realiza o cadastro de palavras do jogo, mas é a figura 11.7.
+
+cap. 11, pág. 285:
+	No segundo parágrafo, o nome do arquivo está com a extensão errada. Está escrito "ex11_3jogo.cs" em vez de "ex11_3jogo.js".
+
+=========================///////////////======================================
+
+
+
+
+
+
+
+
+
+
